@@ -1,0 +1,23 @@
+<li>
+  {{this.id}}.&nbsp; {{burger_name}}
+
+	<button class="devour-burger" data-id="{{this.id}}" data-newsleep="{{sleep}}">
+		{{#if sleep}}Devour Burger!{{else}}Re-Order!{{/if}}
+	</button>
+	<button data-id="{{this.id}}" class="delete-item">Delete This</button>
+</li>
+
+<!--Code For Removing "Re-Do" Button, Below==>
+
+<!
+<li>
+  {{this.id}}.&nbsp; {{burger_name}}
+
+{{#if sleep}}
+	<button class="change-sleep" data-id="{{this.id}}" data-newsleep="{{sleep}}">
+		Devour Burger!
+	</button>
+{{/if}}
+	<button data-id="{{this.id}}" class="delete-cat">Delete This</button>
+</li>
+-->
